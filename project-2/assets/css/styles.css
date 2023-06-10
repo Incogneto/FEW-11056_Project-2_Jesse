@@ -64,6 +64,13 @@ body {
     height: auto;
   }
   
+  /* selection choice */
+
+.center {
+  width: 20%;
+  height: 10em;
+}
+
 
   /* Features */
   
