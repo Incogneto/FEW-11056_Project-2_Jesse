@@ -1,6 +1,14 @@
 /* Global styles */
 
 body {
+	font-family: 'Oxygen', sans-serif;
+	font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f7f7f7;
+  }
+  
+  footer {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -8,15 +16,7 @@ body {
     background-color: #f7f7f7;
   }
   
-  a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-  }
+
   
   /* Navigation */
   
@@ -26,112 +26,28 @@ body {
   }
   
   .navbar-brand {
-    color: #fff;
+    color: #000000;
     font-weight: bold;
   }
   
   .nav-link {
-    color: #fff;
+    color: #000000;
   }
   
   .nav-link:hover {
-    color: #ccc;
+    color: #000000;
   }
   
-  /* Header */
-  
-  .header {
-    background-image: url("header-bg.jpg");
-    background-size: cover;
-    background-position: center center;
-    color: #fff;
-    padding: 100px 0;
-  }
-  
-  .header h1 {
-    font-size: 3em;
-    margin-bottom: 0.5em;
-  }
-  
-  .header p {
-    font-size: 1.5em;
-    margin-bottom: 2em;
+
+  /* hero image */
+
+  .hero-image {
+	background-image: url('../images/butterfly-hero.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 400px;
   }
 
-  
-  .img-fluid {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* selection choice */
-
-.center {
-  width: 20%;
-  height: 10em;
-}
-
-
-  /* Features */
-  
-  .features {
-    background-color: #fff;
-    padding: 50px 0;
-  }
-  
-  .features h2 {
-    margin-bottom: 2em;
-  }
-  
-  .features .feature {
-    margin-bottom: 2em;
-  }
-  
-  .features .feature i {
-    font-size: 3em;
-    margin-bottom: 0.5em;
-  }
-  
-  .features .feature h3 {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-  }
-  
-  .features .feature p {
-    font-size: 1.2em;
-  }
-  
-  /* Testimonials */
-  
-  .testimonials {
-    background-color: #f7f7f7;
-    padding: 50px 0;
-  }
-  
-  .testimonials h2 {
-    margin-bottom: 2em;
-  }
-  
-  .testimonials .testimonial {
-    margin-bottom: 2em;
-    text-align: center;
-  }
-  
-  .testimonials .testimonial img {
-    border-radius: 50%;
-    margin-bottom: 1em;
-  }
-  
-  .testimonials .testimonial p {
-    font-size: 1.2em;
-    font-style: italic;
-  }
-  
-  .testimonials .testimonial .author {
-    font-weight: bold;
-    margin-top: 1em;
-  }
-  
   /* Footer */
   
   footer {
