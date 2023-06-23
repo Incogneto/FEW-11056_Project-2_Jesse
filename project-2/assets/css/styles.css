@@ -1,13 +1,14 @@
 /* Global styles */
 
 body {
-	font-family: 'Oxygen', sans-serif;
+	font-family: 'Oxygen', sans-serif !important;
 	font-size: 16px;
     line-height: 1.5;
     color: #333;
     background-color: #f7f7f7;
   }
-  
+
+
   footer {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -16,13 +17,61 @@ body {
     background-color: #f7f7f7;
   }
   
+  .intro-text {
+	padding: 40px;
+	background-color: #f8f9fa;
+  }
+
+  .content-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+  }
+
+  .content-image:hover {
+    transform: scale(1.1);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .container {
+	padding: 0% 0% 5% 0%;
+  }
+
+  .content-info {
+	padding: 5% 0% 0% 0%;
+  }
+
+  .title {
+	padding: 0% 0% 5% 0%;
+	text-align: center;
+  }
+
+  .card {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Hero Carousel */
 
   
+
   /* Navigation */
   
   .navbar {
     background-color: #343a40;
     border-radius: 0;
+	padding: .5% 0% .5% 5%;
   }
   
   .navbar-brand {
@@ -45,7 +94,14 @@ body {
 	background-image: url('../images/butterfly-hero.jpg');
 	background-size: cover;
 	background-position: center;
+	height: 30em;
+  }
+
+  .hero-carousel .carousel-item {
 	height: 400px;
+	background-size: cover;
+	background-position: center;
+	height: 30em;
   }
 
   /* Footer */
