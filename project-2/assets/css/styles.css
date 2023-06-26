@@ -21,6 +21,13 @@ body {
     width: 90%;
     margin: 0 auto;
   }
+  
+  a {
+	color: #000;
+    text-decoration: underline;
+    padding: 0.2em 0.5em;
+    text-transform: none;
+  }
 
 /* headings */
 
@@ -57,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
   p {
 	font-size: 1em !important;
 	line-height: 1.2em !important;
+	text-decoration: none !important;
   }
 
 
@@ -139,6 +147,8 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #333;
   }
 
+
+
   /* Navigation */
   
   .navbar {
@@ -164,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
   /* hero image */
 
   .hero-image {
-	background-image: url('../images/butterfly-hero.jpg');
+	background-image: url('../images/banner.jpg');
 	background-size: cover;
 	background-position: center;
 	height: 30em;
