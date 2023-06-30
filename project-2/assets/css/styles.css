@@ -196,6 +196,13 @@ h1, h2, h3, h4, h5, h6 {
 	height: 30em;
   }
 
+  .hero-image-gallery {
+	background-image: url('../images/hm-banner.png');
+	background-size: cover;
+	background-position: center;
+	height: 30em;
+  }
+
   .hero-carousel .carousel-item {
 	height: 400px;
 	background-size: cover;
@@ -205,59 +212,32 @@ h1, h2, h3, h4, h5, h6 {
 
 /* gallery */
 
-.g {
-	box-sizing: border-box;
+.gallery-img {
+	height: auto;
+	width: 100%;
+	object-fit: fill;
   }
-  
-  img {
-	max-width: 100%;
-	vertical-align: top;
-  }
-  
-  .gallery {
-	display: flex;
-	margin: 10px auto;
-	max-width: 800px;
-	position: relative;
-	padding-top: 66.6666666667%;
-  }
-  @media screen and (min-width: 820px) {
-	.gallery {
-	  padding-top: 400px;
-	}
-  }
-  .gallery__img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-  }
-  .gallery__thumb {
-	padding-top: 6px;
-	margin: 6px;
-	display: block;
-  }
-  .gallery__selector {
-	position: absolute;
-	opacity: 0;
-	visibility: hidden;
-  }
-  .gallery__selector:checked + .gallery__img {
-	opacity: 1;
-  }
-  .gallery__selector:checked ~ .gallery__thumb > img {
-	box-shadow: 0 0 0 3px #333;
-  }
-	
-  .gallery-2 {
-	display: flex;
-	margin: 10px auto;
-	max-width: 800px;
-	position: relative;
-	padding-top: 0em;
-  } 
 
+  .modal-lg {
+	max-width: 800px;
+  }
+
+  .gal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0% 0% 10% 0%;
+    row-gap: 1em;
+    column-gap: 1em;
+}
+
+.gal div{
+    min-height: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 25em;
+
+}
 
   /* Footer */
   
@@ -285,5 +265,6 @@ h1, h2, h3, h4, h5, h6 {
       display: inline-block;
       margin-right: 1em;
     }
+	
   }
   
