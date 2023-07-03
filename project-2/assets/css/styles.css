@@ -1,57 +1,271 @@
+
+/* Global styles */
+
 body {
-	margin: 0;
-	padding: 0;
-	font-family: Arial, sans-serif;
-}
+	font-family: 'Oxygen', sans-serif !important;
+	font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f7f7f7;
+  }
 
-header {
-	background-color: #333;
-	color: #fff;
-	padding: 10px;
-}
 
-nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
+  footer {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f7f7f7;
+  }
+  
+  .inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  a {
+	color: #000;
+    text-decoration: underline;
+    padding: 0.2em 0.5em;
+    text-transform: none;
+  }
 
-nav ul li {
-	display: inline-block;
-}
+/* headings */
 
-nav ul li a {
-	display: block;
-	padding: 10px;
-	color: #fff;
-	text-decoration: none;
-}
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 16px !important;
+	font-weight: bold !important;
+  }
+  
+  h1 {
+	font-size: 1.7em !important; 
+	line-height: 1em !important; 
+  }
+  
+  h2 {
+	font-size: 1.5em !important; 
+	line-height: 1.1em !important; 
+  } 
+  
+  h3 {
+	font-size: 1.3em !important; 
+	line-height: 1.2em !important;
+  }
+  
+  h4 {
+	font-size: 1.2em !important;
+	line-height: 1.333em !important;
+  }
+  
+  h5, h6 {
+	font-size: 1em !important;
+	line-height: 1.2em !important;
+  }
 
-nav ul li a:hover {
-	background-color: #555;
-}
+  p {
+	font-size: 1em !important;
+	line-height: 1.2em !important;
+	text-decoration: none !important;
+  }
 
-main {
-	padding: 20px;
-}
 
-section {
-	margin-bottom: 20px;
-}
+/* Content Styles */
 
-h1 {
-	font-size: 36px;
-	margin-top: 0;
-}
+  .container {
+	padding: 0% 0% 5% 0%;
+  }
 
-p {
-	font-size: 18px;
-	line-height: 1.5;
-}
+  .content-info {
+	padding: 5% 0% 0% 0%;
+  }
 
-footer {
-	background-color: #eee;
-	color: #333;
-	padding: 10px;
+  .intro-text {
+	padding: 40px;
+	background-color: #f8f9fa;
+	padding: 10% 0% 0% 0%;
 	text-align: center;
+  }
+
+  .content-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+  }
+
+  .content-image:hover {
+    transform: scale(1.1);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .title {
+	padding: 5% 0% 5% 0%;
+	text-align: center;
+  }
+
+  .card {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	z-index: 1;
+  }
+
+  /* Hero Carousel */
+
+  .hero-carousel .carousel-item {
+	height: 400px;
+	background-size: cover;
+	background-position: center;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+  }
+
+  .hero-carousel .carousel-item.active {
+	opacity: 1;
+  }
+
+  .hero-carousel .carousel-item.left {
+	transform: translateX(-100%);
+  }
+
+  .hero-carousel .carousel-item.right {
+	transform: translateX(100%);
+  }
+
+  .carousel-inner {
+	overflow: visible;
+  }
+
+  .carousel {
+	background-color: #333;
+  }
+
+
+
+  /* Navigation */
+  
+  .spacer {
+	padding: 1% 0% 1% 5%;
+  }
+
+  .navbar {
+    background-color: #343a40;
+    border-radius: 0;
+	padding: .5% 0% .5% 5%;
+	position: fixed;
+	top: 0; 
+	width: 100%;
+	z-index: 1;
+  }
+  
+  .navbar-brand {
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    color: #000000;
+  }
+  
+  .nav-link:hover {
+    color: #000000;
+  }
+  
+
+  /* hero image */
+
+  .hero-image-shop {
+	background-image: url('../images/banner.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 30em;
+  }
+
+  .hero-image-event {
+	background-image: url('../images/shop-banner.png');
+	background-size: cover;
+	background-position: center;
+	height: 30em;
+  }
+
+  .hero-image-gallery {
+	background-image: url('../images/hm-banner.png');
+	background-size: cover;
+	background-position: center;
+	height: 30em;
+  }
+
+  .hero-carousel .carousel-item {
+	height: 400px;
+	background-size: cover;
+	background-position: center;
+	height: 30em;
+  }
+
+/* gallery */
+
+.gallery-img {
+	height: auto;
+	width: 100%;
+	object-fit: fill;
+  }
+
+  .modal-lg {
+	max-width: 800px;
+  }
+
+  .gal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0% 0% 10% 0%;
+    row-gap: 1em;
+    column-gap: 1em;
 }
+
+.gal div{
+    min-height: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 25em;
+
+}
+
+  /* Footer */
+  
+  footer {
+    padding: 50px 0;
+    color: #777;
+  }
+  
+  footer h4 {
+    margin-bottom: 1em;
+  }
+  
+  footer ul li {
+    margin-bottom: 0.5em;
+  }
+  
+  @media (min-width: 768px) {
+    footer ul {
+      margin-left: 0;
+      padding-left: 0;
+      list-style: none;
+    }
+    
+    footer ul li {
+      display: inline-block;
+      margin-right: 1em;
+    }
+	
+  }
+  
